@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欧代利</title>
+    <style>
+        .yijicaidan {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .yijicaidan > li {
+            background-color: rgba(144, 225, 128, 0.87);
+            margin: 10px; 
+            width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            position: relative;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .erjihezi {
+            position: absolute;
+            left: 100%; 
+            background-color: rgba(144, 225, 128, 0.87);
+            width: 120px;
+            border-radius: 8px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 10px;
+            padding: 10px 0; 
+        }
+        .erjicaidan {
+            list-style: none;
+            padding: 0;
+        }
+        .erjicaidan > li {
+            margin: 10px 0; 
+            width: 100%;
+        }
+        .erjicaidan > li a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+        }
+        .yijicaidan > li:hover > .erjihezi {
+            display: flex; 
+        }
+    </style>
+</head>
+<body>
+    <div class="yijihezi">
+        <ul class="yijicaidan">
+            <li>
+                <a href="#">树木</a>
+            </li>
+            <li>
+                <a href="#">花卉</a>
+                <div class="erjihezi">
+                    <ul class="erjicaidan">
+                        <li><a href="#">草本花卉</a></li>
+                        <li><a href="#">木本花卉</a></li>
+                        <li><a href="#">多浆花卉</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">草本</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
